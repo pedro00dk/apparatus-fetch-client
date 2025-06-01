@@ -1,0 +1,45 @@
+{
+    "name": "@_apparatus_/fetch-client",
+    "description": "A thin wrapper for `fetch` with an `axios` inspired API.",
+    "version": "1.0.0",
+    "type": "module",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/pedro00dk/apparatus-fetch-client"
+    },
+    "author": {
+        "name": "Pedro Henrique",
+        "email": "pedro00dk@gmail.com"
+    },
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/index.js",
+            "types": "./dist/index.d.ts"
+        }
+    },
+    "keywords": [
+        "fetch",
+        "client",
+        "request",
+        "response",
+        "http",
+        "api",
+        "rest",
+        "get",
+        "url",
+        "axios",
+        "node-fetch"
+    ],
+    "scripts": {
+        "build": "vite build && tsc",
+        "test": "node --test ./**/*.test.*"
+    },
+    "devDependencies": {
+        "@types/node": "22.15.29",
+        "msw": "2.8.7",
+        "typescript": "5.8.3",
+        "vite": "6.3.5"
+    }
+}
